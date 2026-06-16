@@ -20,7 +20,7 @@ module testbench;
       if(test_count ==4'b0000)begin
         $display("PASS:test_count (%b) works suuper perfecto",test_count);
   end else begin
-    $display("DENGO:test_count (%b) is missing",test_count);
+    $display("FAIL:test_count (%b) is missing",test_count);
   end
   
    rst_n =1'b1;
@@ -32,7 +32,7 @@ module testbench;
       if(test_count ==4'b0001)begin
         $display("PASS:test_count (%b) works suuper perfecto",test_count);
   end else begin
-    $display("DENGO:test_count (%b) is missing bro",test_count);
+    $display("FAIL:test_count (%b) is missing bro",test_count);
   end
       $finish;
     end
